@@ -3,9 +3,11 @@ class Ability
 
   def initialize(user)
 
-    if user.admin?
+    if user.has_role? :admin
       can :manage, :all
     else
+
+      can :manage, Question if user.has_role?(:moderator, Question)
 
       can :update, Question do |question|
         question.user == user

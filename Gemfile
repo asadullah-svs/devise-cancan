@@ -25,6 +25,8 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'devise'
 gem 'cancan'
+gem 'rolify'
+gem 'hirb'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'

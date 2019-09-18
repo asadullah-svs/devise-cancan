@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  rolify
   has_many :questions
   has_many :answers
   # Include default devise modules. Others available are:
